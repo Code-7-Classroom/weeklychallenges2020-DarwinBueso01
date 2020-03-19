@@ -1,0 +1,17 @@
+#checkerboard {
+    border: solid purple 1px;
+    width: 800px;
+    height: 800px;
+  }
+  .black, .white{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    float: left;
+  }
+  .black{
+    background-color: black;
+  }
+  .white{
+    background-color: white;
+  }

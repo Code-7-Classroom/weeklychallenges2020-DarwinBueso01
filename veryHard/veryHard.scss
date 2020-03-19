@@ -1,0 +1,73 @@
+$myColor: black;
+$alignment: center;
+$myBorder: solid;
+
+h1{
+    text-align: $alignment;
+    color: $myColor;
+}
+
+h3{
+    color: $myColor
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding: 15px;
+    
+}
+
+.grid{
+    text-align: $alignment;
+    padding: 20px 0;
+    font-size: 30px;
+    width: 50px;
+    &__container{
+        border: $myBorder;
+        &--grey{
+            background-color: grey;
+            border: $myBorder;
+        }
+    }
+ 
+}
+
+.grid3{
+    text-align: $alignment;
+    &__container3{
+        border: $myBorder;
+        &--darkGrey{
+            background-color: darkgrey;
+            border: $myBorder;
+        }
+    }
+}
+
+.grid-content{
+    text-align: $alignment;
+    padding: 50px;
+    font-size: 15px;
+    line-height: 30px;
+    border: $myBorder;
+}
+
+.img1{
+    height: 200px;
+    width: 250px;    
+}
+
+.img2{
+    height: 200px;
+    width: 250px; 
+}
+
+.img3{
+    height: 200px;
+    width: 300px;
+}
+
+h2::first-line{
+    color: darkred;
+}
+
