@@ -1,0 +1,40 @@
+.product-grid{
+    display: grid;
+    grid-template-columns: 350px 350px 350px 350px;
+    text-align: center;
+    grid-row-gap: 10px;
+}
+
+.product-info{
+    width: 320px;
+    border: solid;
+}
+
+.img1{
+    height: 150px;
+    width: 150px;
+}
+
+
+/* utility */
+
+.btn{
+    display: inline-block;
+    font-size: 1rem;
+    color: #fff;
+    background: #333;
+    padding: 13px 20px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 3px;
+}
+
+.btn:hover{
+    background: rgb(131, 126, 126);
+}
+
+.price{
+    color: green;
+}
+
+
