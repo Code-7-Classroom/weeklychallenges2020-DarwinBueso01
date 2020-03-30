@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../eCommerceWebsite/css/product.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Product</title>
+</head>
+<body>
+
+        <header>
+                <nav id="navbar">
+                    <div class="container1">
+                        <h1 class="logo">DR</h1>
+                        <ul>
+                            <li><a href="../eCommerceWebsite/contact.html">Contact</a></li>
+                            <li><a href="../eCommerceWebsite/product.html">Products</a></li>
+                            <li><a href="../eCommerceWebsite/home.html">Home</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <section id="frontImage">
+                   <div class="container">
+                       <div class="contentInfo">
+                           <h1>Welcome To Our Online Store</h1>
+                           <p>Check out the list of products we offer.</p>
+                       </div>
+                       <div class="greenBox">
+                           <p>Dolphin Rescue</p>
+                       </div>
+                   </div>
+                </section>
+            </header>
+
+            <section id="productContent">
+                <h2>Take some time to review the list below.</h2>
+                <p>We have a variety of necklaces, paintings, braceletes, dolphin figures, lamps and more. We hope to serve you in the best way we can.</p>
+            </section>
+
+          <!-- Filter -->
+   <form name="form" class="form-container" onsubmit="return validateForm()" action="/action_page.php" method="get"></form>
+    <div id="filterSection">
+      <div class="gridfilter">
+          <p class="filters">Filter by:</p>
+          <select id="filterSelect" onchange="filterItems()">
+              <option value="default">All</option>
+              <option value="Best">Best</option>
+              <option value="Good">Good</option>
+          </select>
+      </div>
+      <div class="gridpricefilter">
+          <label class="filters">Filter Price:</label>
+              <select id="priceSelect" onchange="priceItems()">
+                  <option value="default">All</option>
+                  <option value="10-30">$10 - $30</option>
+                  <option value="30-100">$30 - $100</option>
+                  <option value="100-200">$100 - $200</option>
+              </select>
+      </div>
+    </div>
+
+
+            <section class="productSection">
+                <div class="product1">
+                    <div class="productImage">
+                      <figure><img style="width: 250px; height: 200px;" src="../eCommerceWebsite/img/dolphin5.jpg" alt="dolphinTrainer"></figure>
+                    </div>
+                    <div class="productInfo">
+                      <div class="info">
+                        <h2 class="tittle">Dolphin Painting</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <h3 class="price">$32.99</h3>
+                        <h3 class="shipping">3-Day Shipping</h3>
+                        <p class="productDescription">Two Jumping Dolphins at Sunset - Canvas Art Wall Decor - 16" x 24"</p>
+                        <p><span>Type:</span> <span class="item__type">Good</span></p>
+                        <p><span class="item__price">30-100</span></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="product1">
+                    <div class="productImage" >
+                      <figure><img style="width: 250px; height: 250px;" src="../eCommerceWebsite/productImg/lamp1.jpg" alt="dolphinJumping"></figure>
+                    </div>
+                    <div class="productInfo">
+                      <div class="info">
+                        <h2 class="tittle">Modern Lamp</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <h3 class="price">$10.90</h3>
+                        <h3 class="shipping">3-Day Shipping</h3>
+                        <p class="productDescription">3D Illusion Dolphin LED Night Light Lamp,7 Colors Gradual Changing Touch Switch</p>
+                        <p><span>Type:</span> <span class="item__type">Good</span></p>
+                        <p><span class="item__price">10-30</span></p>
+                      </div>
+                    </div>
+                </div>
+            </section>
+            <section class="productSection">
+                <div class="product1">
+                    <div class="productImage" >
+                      <figure><img style="width: 250px; height: 250px;" src="../eCommerceWebsite/productImg/T-shirt1.jpg" alt="T-Shirt"></figure>
+                    </div>
+                    <div class="productInfo">
+                      <div class="info">
+                        <h2 class="tittle">Fantasy World T-Shirt</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <h3 class="price">$29.99</h3>
+                        <h3 class="shipping">10-Day Shipping</h3>
+                        <p class="productDescription">Enter the dolphin fantasy world with our 3D ALL OVER PRINTED DOLPHIN T SHIRT</p>
+                        <p><span>Type:</span> <span class="item__type">Good</span></p>
+                        <p><span class="item__price">10-30</span></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="product1">
+                    <div class="productImage" >
+                      <figure><img style="width: 250px; height: 250px;" src="../eCommerceWebsite/productImg/T-shirt2.jpg" alt="T-Shirt"></figure>
+                    </div>
+                    <div class="productInfo">
+                      <div class="info">
+                        <h2 class="tittle">Dolphin World T-Shirt</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <h3 class="price">$29.99</h3>
+                        <h3 class="shipping">10-Day Shipping</h3>
+                        <p class="productDescription">Become one of this creatures wearing our 3D dolphin Design T-shirt.</p>
+                        <p><span>Type:</span> <span class="item__type">Good</span></p>
+                        <p><span class="item__price">10-30</span></p>
+                      </div>
+                    </div>
+                </div>
+            </section>
+            <section class="productSection">
+                <div class="product1">
+                    <div class="productImage" >
+                      <figure><img style="width: 200px; height: 200px;" src="../eCommerceWebsite/productImg/necklace1.jpg" alt="necklace"></figure>
+                    </div>
+                    <div class="productInfo">
+                      <div class="info">
+                        <h2 class="tittle">Dolphin Necklace</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <h3 class="price">$29.99</h3>
+                        <h3 class="shipping">3-Day Shipping</h3>
+                        <p class="productDescription">Fancime Christmas Gift Ocean Collection 925 Sterling Silver Cute Dolphin</p>
+                        <p><span>Type:</span> <span class="item__type">Good</span></p>
+                        <p><span class="item__price">10-30</span></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="product1">
+                    <div class="productImage" >
+                      <figure><img style="width: 250px; height: 200px;" src="../eCommerceWebsite/productImg/necklace2.jpg" alt="crystalNecklace"></figure>
+                    </div>
+                    <div class="productInfo">
+                      <div class="info">
+                        <h2 class="tittle">Crystal Necklace</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <h3 class="price">$182.04</h3>
+                        <h3 class="shipping">3-Day Shipping</h3>
+                        <p class="productDescription">Dolphin Necklace Adorned With White Swarovski® Crystals</p>
+                        <p><span>Type:</span> <span class="item__type">Best</span></p>
+                        <p><span class="item__price">100-200</span></p>
+                      </div>
+                    </div>
+                </div>
+            </section>
+            <section class="productSection">
+                <div class="product1">
+                    <div class="productImage" >
+                      <figure><img style="width: 250px; height: 200px;" src="../eCommerceWebsite/productImg/necklace3.jpg" alt="Necklace"></figure>
+                    </div>
+                    <div class="productInfo">
+                      <div class="info">
+                        <h2 class="tittle">Capri Dolphin Necklace</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <h3 class="price">$119.99</h3>
+                        <h3 class="shipping">3-Day Shipping</h3>
+                        <p class="productDescription">Natural Shell | Mother of Pearl. Capri inlay with high polish finish.</p>
+                        <p><span>Type:</span> <span class="item__type">Best</span></p>
+                        <p><span class="item__price">100-200</span></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="product1">
+                    <div class="productImage" >
+                      <figure><img style="width: 300px; height: 200px;" src="../eCommerceWebsite/productImg/dolphinEarings.png" alt="earrings"></figure>
+                    </div>
+                    <div class="productInfo">
+                      <div class="info">
+                        <h2 class="tittle">Earrings</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <h3 class="price">$159.99</h3>
+                        <h3 class="shipping">3-Day Shipping</h3>
+                        <p class="productDescription">Jumping Dolphin Dangle Earrings in High Polish 14k Gold</p>
+                        <p><span>Type:</span> <span class="item__type">Best</span></p>
+                        <p><span class="item__price">100-200</span></p>
+                      </div>
+                    </div>
+                </div>
+            </section>
+            <section class="productSection">
+                <div class="product1">
+                    <div class="productImage" >
+                      <figure><img style="width: 250px; height: 250px;" src="../eCommerceWebsite/productImg/dolphinTable.jpg" alt="table"></figure>
+                    </div>
+                    <div class="productInfo">
+                      <div class="info">
+                        <h2 class="tittle">Table | Waves Design</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <h3 class="price">$185.85</h3>
+                        <h3 class="shipping">2-Day Shipping</h3>
+                        <p class="productDescription">Playful Dolphins Marine Life Glass Top Accent Table.</p>
+                        <p><span>Type:</span> <span class="item__type">Best</span></p>
+                        <p><span class="item__price">100-200</span></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="product1">
+                    <div class="productImage" >
+                      <figure><img style="width: 250px; height: 250px;" src="../eCommerceWebsite/productImg/homeDecor.jpeg" alt="figurine"></figure>
+                    </div>
+                    <div class="productInfo">
+                      <div class="info">
+                        <h2 class="tittle">Home Decor Figurine</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <h3 class="price">$22.02</h3>
+                        <h3 class="shipping">3-Day Shipping</h3>
+                        <p class="productDescription">Fashion Luxury Elegant Wedding Gifts Home Modern Wedding Decoration Couple Simple Ceramic Desktop Gift.</p>
+                        <p><span>Type:</span> <span class="item__type">Good</span></p>
+                        <p><span class="item__price">10-30</span></p>
+                      </div>
+                    </div>
+                </div>
+            </section>
+            <section class="productSection">
+                <div class="product1">
+                    <div class="productImage" >
+                      <figure><img style="width: 250px; height: 200px;" src="../eCommerceWebsite/productImg/cup.jpg" alt="cup"></figure>
+                    </div>
+                    <div class="productInfo">
+                      <div class="info">
+                        <h2 class="tittle">Dolphin Party Cup</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <h3 class="price">$38.41</h3>
+                        <h3 class="shipping">3-Day Shipping</h3>
+                        <p class="productDescription">DOLPHIN CERAMIC MUG COFFEE TEA MILK CUP SPOON SAUCER SET OFFICE HOME PARTY.</p>
+                        <p><span>Type:</span> <span class="item__type">Good</span></p>
+                        <p><span class="item__price">30-100</span></p>
+                      </div>
+                    </div>
+                </div>
+                <div class="product1">
+                    <div class="productImage" >
+                      <figure><img style="width: 250px; height: 200px;" src="../eCommerceWebsite/productImg/dolphinCanvas.jpg" alt="canvasPainting"></figure>
+                    </div>
+                    <div class="productInfo">
+                      <div class="info">
+                        <h2 class="tittle">Dolphin Canvas Painting</h2>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star"></span>
+                        <h3 class="price">$70.00</h3>
+                        <h3 class="shipping">3-Day Shipping</h3>
+                        <p class="productDescription"> Bring your artwork to life with the texture and depth of a stretched canvas print. </p>
+                        <p><span>Type:</span> <span class="item__type">Good</span></p>
+                        <p><span class="item__price">30-100</span></p>
+                      </div>
+                    </div>
+                </div>
+            </section>
+                
+
+            <footer id="footer">
+                <p>| Dolphin Rescue | &copy; 2020, All Rights Reserved</p>
+                <a href="https://www.facebook.com/profile.php?id=100009827972169&ref=bookmarks" class="fa fa-facebook"></a>
+                <a href="https://twitter.com/explore" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/darwin02504/" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+            </footer>
+
+    <script src="../eCommerceWebsite/javaScript/product.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+/* General */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Serif', serif;
+
+}
+
+/* Navbar */
+
+#navbar{
+    background: #053031;
+    color: white;
+    overflow: auto;
+
+}
+
+#navbar h1{
+    margin-top: 18px;
+    float: left;
+    font-family: 'Parisienne', cursive;
+}
+
+#navbar li{
+    display: inline-block;
+    float: right;
+    margin: 20px;
+}
+
+
+#navbar li a{
+    list-style-type: none;
+    text-decoration: none;
+    color: white;   
+}
+
+.container1{
+    margin: auto;
+    max-width: 1400px;
+    overflow: auto;
+    font-size: 18px;
+}
+
+#navbar ul li a:hover{
+    background: rgba(5, 8, 9, 0.8);
+    padding: 20px 10px;
+    opacity: 0.7;
+    transition: 0.7s;  
+}
+
+/* First Image */
+
+#frontImage{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/dolphin3.jpeg') no-repeat center center/cover;
+    height: 600px;
+}
+
+#frontImage .container .contentInfo{
+    color: white;
+    text-align: center;
+    padding: 200px 200px;
+}
+
+.container .contentInfo h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+}
+
+.container .contentInfo p{
+    font-size: 20px;
+}
+
+/* Green Box */
+
+#frontImage .container .greenBox{
+    background-color: lightseagreen;
+    display: block;
+    position: relative;
+    padding: 35px 35px;
+    text-align: center;
+    margin-top: 80px;
+    margin-left: 300px;
+    width: 400px;
+}
+
+#frontImage .container .greenBox p{
+    color: #053031;
+    font-size: 30px;
+    font-family: 'Parisienne', cursive;
+}
+
+/* General Information */
+
+#productContent{
+    text-align: center;
+    padding: 50px 50px;
+    margin-top: 50px;
+}
+
+#productContent h2{
+    margin-bottom: 20px;
+}
+
+/* Filter */
+
+#filterSection{
+    display: flex;
+    flex-direction: row;
+    background: #4a8582;
+    width: 200px;
+    margin-left: 110px;
+}
+
+.gridfilter, .gridpricefilter{
+    padding: 10px 10px;
+    color: white;
+    border: none;
+    font-size: 15px;
+    text-decoration: none;
+    border: solid black;
+}
+
+/* Products Styling */
+
+.productSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.productSection .product1{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: 10px 10px;
+}
+
+
+.productSection .product1 .productImage{
+    width: 300px;
+    height: 300px;
+    padding: 20px 20px;
+    border: solid #053031;
+}
+
+.productSection .product1 .productInfo{
+    width: 300px;
+    border: solid #053031;
+    height: 300px;
+    background:  #4a8582;
+    color: white;
+}
+
+.productSection .product1 .productInfo .info{
+    margin-top: 20%;
+}
+
+.tittle{
+    text-shadow: 5px 5px 5px #053031;  
+}
+
+.price{
+    color: #053031;
+    
+}
+
+.shipping{
+    text-shadow: 5px 5px 5px #053031;
+}
+
+.productDescription{
+    color: black;
+}
+
+
+.checked {
+    color: orange;
+  }
+  
+/* Footer */
+
+#footer{
+    background: #053031;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+}
+
+/* Social Media Links */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    color: lightseagreen;
+  }
+  
+  
+  .fa-twitter {
+    color: lightseagreen;
+  }
+
+  .fa-youtube {
+    color: lightseagreen;
+  }
+  
+  .fa-instagram {
+    color: lightseagreen;
+  }
+
+/* Media Queries */
+
+@media screen and (max-width: 790px){
+    #frontImage .container .greenBox{
+        margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 790px){
+    .productSection{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 400px;
+        margin-left: 200px;
+    }
+}
+
+@media screen and (max-width: 790px){
+    .productSection .product1{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 10px;
+    }
+    
+}
+
+
+
+
