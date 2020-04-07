@@ -1,11 +1,12 @@
-function pii(name, ssn){
-    var _name = name;
-    var _ssn = ssn;
-    return {
-        getName(){
-            return _name;
-        }
+function getName(){
+    return function(){
+        var pii = {
+            name: 'Darwin',
+            ssn: '22222'
+        };
+        return pii.name;
     }
 }
-var me = pii("Darwin", 777);
-console.log(me.getName());
+
+var getNameOnly = getName();
+console.log(getNameOnly());
