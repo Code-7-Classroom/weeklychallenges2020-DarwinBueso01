@@ -10,6 +10,8 @@ whiteButton.addEventListener('click', () => {
     updateTheBackground('white');
 });
 
+
 window.updateTheBackground =  function(className) {
     document.body.classList = className;
 }
+

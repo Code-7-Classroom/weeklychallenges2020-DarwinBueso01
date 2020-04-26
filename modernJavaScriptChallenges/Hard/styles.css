@@ -9,10 +9,10 @@ button {
     cursor: pointer;
 }
 
-body.red {
+.red {
     background-color: red;
 }
 
-body.white {
+.white {
     background-color: white;
 }

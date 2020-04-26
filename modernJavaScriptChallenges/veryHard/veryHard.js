@@ -13,6 +13,7 @@ const input = (string) => {
         }
     }
 }
+
 console.log(input('what a wonderful day it has been!'));
 
 
